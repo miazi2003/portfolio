@@ -11,7 +11,6 @@ body {
   height: 100vh;
   width: 100%;
   background-color: #f1f0f6;
- 
 }
 
 .Main {
@@ -28,7 +27,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
- 
 }
 .imagebox {
   background-color: #f1f0f6;
@@ -251,13 +249,12 @@ body {
   background-color: rgb(255, 180, 0);
   border: none;
 }
-.cv:hover{
-  background-color: rgb(184, 133, 15)
-  ;
+.cv:hover {
+  background-color: rgb(184, 133, 15);
   box-shadow: 0px 0px 3px;
   cursor: pointer;
   border-radius: 5px;
-  }
+}
 
 .cv img {
   margin-left: 10px;
@@ -337,37 +334,31 @@ h1 {
   margin-top: 20px;
   color: rgb(118, 118, 118);
   font-size: 15px;
-
 }
-.hireme{
-
+.hireme {
   margin-left: 50px;
   margin-top: 20px;
-
 }
-.hire{
+.hire {
   height: 35px;
   width: 150px;
   border: none;
   display: flex;
   align-items: center;
-  justify-content: center ;
-  font-weight:bold;
+  justify-content: center;
+  font-weight: bold;
   background-color: rgb(255, 180, 0);
 }
-.hire:hover{
-background-color: rgb(184, 133, 15)
-;
+.hire:hover {
+  background-color: rgb(184, 133, 15);
 
-box-shadow: 0px 0px 3px;
-cursor: pointer;
-border-radius: 5px;
-
+  box-shadow: 0px 0px 3px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.hire img{
- margin-left: 15px;
-
+.hire img {
+  margin-left: 15px;
 }
 
 .imagediv {
@@ -381,128 +372,206 @@ border-radius: 5px;
   object-fit: cover;
 }
 
-.circle{
+.circle {
   height: 20px;
   width: 20px;
   border-radius: 100%;
-  border:  3px solid red;
+  border: 3px solid red;
   position: absolute;
   z-index: 20;
 }
-.square{
- 
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    border:  3px solid red;
-    z-index: 20;
-  
+.square {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  border: 3px solid red;
+  z-index: 20;
 }
 
-.c1{
+.c1 {
   top: 20px;
   left: 50px;
   border-color: orange;
-
 }
-.c2{
+.c2 {
   bottom: 70px;
-  right:700px;
+  right: 700px;
   border-color: brown;
 }
-.c3{
+.c3 {
   bottom: 20px;
-  right:30px;
+  right: 30px;
 }
-.c4{
+.c4 {
   top: 50px;
-  right:550px;
+  right: 550px;
 }
-.s1{
+.s1 {
   bottom: 30px;
   left: 100px;
-  transform:rotate(20deg);
+  transform: rotate(20deg);
   border-color: chartreuse;
 }
-.s1:hover{
+.s1:hover {
   bottom: 30px;
   left: 100px;
-  transform:rotate(20deg);
+  transform: rotate(20deg);
   border-color: chartreuse;
- 
 }
-.s2{
+.s2 {
   top: 30px;
   right: 100px;
   transform: rotate(50deg);
   border-color: rgb(202, 202, 20);
 }
-.s3{
+.s3 {
   bottom: 30px;
   left: 0px;
-  border-color:rgb(255, 180, 0);
+  border-color: rgb(255, 180, 0);
 }
 
-.myservices{
- 
- align-items: center;
- justify-content: center;
+.myservices {
+  align-items: center;
+  justify-content: center;
 }
-.heads{
+.heads {
   text-align: center;
   margin-top: 60px;
-
-
 }
-.heads h1{
+.heads h1 {
   margin-bottom: 10px;
   margin-right: 60px;
 }
-.heads p{
+.heads p {
   color: rgb(160, 160, 160);
 }
-.service-design{
+.service-design {
   height: 500px;
   width: calc(1245px - 250px);
- 
-  
+
   margin-top: 50px;
- display: flex ;
- flex-direction: column;
- flex-wrap: wrap;
- 
- row-gap: 20px;
- 
- 
-  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  row-gap: 20px;
+
   align-items: center;
 }
-.service-design .box{
-height: 200px;
-width: 250px;
-margin-bottom: 20px;
+.service-design .box {
+  height: 200px;
+  width: 250px;
+  margin-bottom: 20px;
 
-background-color: white;
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-justify-content: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
-.box p{
+.box p {
   font-size: 13px;
   margin-top: 10px;
   color: rgb(160, 160, 160);
 }
-.box h4{
+.box h4 {
   margin-bottom: 10px;
 }
-.box .order{
+.box .order {
   color: rgb(255, 180, 0);
   font-weight: 500;
 }
 
+.price-category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  
+
+
+ 
+}
+.category {
+  height: 500px;
+  width: 250px;
+
+  background-color: white;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+.category h4 {
+  margin-top: 40px;
+}
+.category h1 {
+  margin-top: 15px;
+  margin-left: -20px;
+}
+.category .hour {
+  margin-top: 15px;
+  color: rgb(160, 160, 160);
+}
+.price-planes p {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+  color: rgb(160, 160, 160);
+  margin-top: 50px;
+
+}
+.ul {
+  margin-top: 20px;
+  font-size: 13px;
+}
+.ul li {
+  margin-top: 9px;
+}
+.most {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 180, 0);
+}
+.category h5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.gold h4 {
+  margin-top: 13px;
+}
+
+.category button {
+  margin-top: 20px;
+  height: 30px;
+  width: 100px;
+  border-radius: 30px;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 3px grey;
+  font-size: 10px;
+  color: black;
+}
+.gold button{
+  background-color: rgb(255, 180, 0);
+}
+
+.category button:hover {
+  background-color: rgb(207, 153, 26);
+  cursor: pointer;
+  
+}
 
 /* ------ RIGHT  ----- */
 
