@@ -455,12 +455,14 @@ h1 {
   flex-wrap: wrap;
 
   row-gap: 20px;
+ column-gap: 30px;
+ margin-left: 10px;
 
   align-items: center;
 }
 .service-design .box {
   height: 200px;
-  width: 250px;
+  width: 300px;
   margin-bottom: 20px;
 
   background-color: white;
@@ -485,18 +487,27 @@ h1 {
 }
 
 .price-category {
+  height: 500px;
+  width: calc(1245px - 250px);
+
+  margin-top: 30px;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  row-gap: 20px;
+ column-gap: 10px;
+margin-right: 10px;
+
   align-items: center;
-  justify-content: center;
-  margin-top: 20px;
   
 
 
  
 }
 .category {
-  height: 500px;
-  width: 250px;
+  height: 600px;
+  width: 300px;
 
   background-color: white;
   margin-left: 20px;
@@ -504,6 +515,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 
 }
 .price {
@@ -524,7 +536,7 @@ h1 {
 .price-planes p {
   text-align: center;
   font-size: 13px;
-  margin-top: 10px;
+  margin-top: 5px;
   color: rgb(160, 160, 160);
   margin-top: 50px;
 
@@ -535,6 +547,10 @@ h1 {
 }
 .ul li {
   margin-top: 9px;
+}
+
+ul {
+  list-style-image: url(./correctsvg/Vector.svg);
 }
 .most {
   height: 30px;
