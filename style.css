@@ -12,14 +12,18 @@ body {
   width: 100%;
   background-color: #f1f0f6;
 }
-
+.root {
+  margin: auto;
+}
 .Main {
   display: flex;
+
   position: relative;
 }
 
 /* -------left------ */
 .left {
+  height: auto;
   width: 250px;
   background-color: white;
   border-top-left-radius: 20px;
@@ -79,7 +83,7 @@ body {
 
 .value {
   margin-top: 6px;
-  background-color: rgb(255, 180, 0);
+
   font-size: 13px;
 }
 .dea {
@@ -296,10 +300,13 @@ body {
 }
 
 /*----------center------ */
+
 .center {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  align-items: center;
+  height: 100%;
+  width: calc(1245px - 250px);
 }
 .signboard {
   height: 450px;
@@ -412,16 +419,11 @@ h1 {
   transform: rotate(20deg);
   border-color: chartreuse;
 }
-.s1:hover {
-  bottom: 30px;
-  left: 100px;
-  transform: rotate(20deg);
-  border-color: chartreuse;
-}
+
 .s2 {
   top: 30px;
   right: 100px;
-  transform: rotate(50deg);
+
   border-color: rgb(202, 202, 20);
 }
 .s3 {
@@ -430,170 +432,642 @@ h1 {
   border-color: rgb(255, 180, 0);
 }
 
-.myservices {
-  align-items: center;
-  justify-content: center;
-}
-.heads {
-  text-align: center;
-  margin-top: 60px;
-}
-.heads h1 {
-  margin-bottom: 10px;
-  margin-right: 60px;
-}
-.heads p {
-  color: rgb(160, 160, 160);
-}
-.service-design {
+.myServiceWrapper {
   height: 500px;
-  width: calc(1245px - 250px);
-
-  margin-top: 50px;
+  width: 995px;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-
-  row-gap: 20px;
- column-gap: 30px;
- margin-left: 10px;
-
   align-items: center;
 }
-.service-design .box {
-  height: 200px;
+.myServiceWrapper .heads {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.myServiceWrapper .heads h1 {
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.myServiceWrapper .heads p {
+  color: #767676;
+}
+
+.myServiceWrapper .serviceBox {
+  height: 70%;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.myServiceWrapper .serviceBox .box {
+  height: 160px;
   width: 300px;
-  margin-bottom: 20px;
+  margin-left: 25px;
 
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   justify-content: center;
+  padding: 25px;
 }
-
-.box p {
+.myServiceWrapper .serviceBox .box p {
   font-size: 13px;
   margin-top: 10px;
-  color: rgb(160, 160, 160);
+  color: #767676;
 }
-.box h4 {
-  margin-bottom: 10px;
+.myServiceWrapper .serviceBox .box h5 {
+  margin-top: 10px;
 }
-.box .order {
-  color: rgb(255, 180, 0);
-  font-weight: 500;
+.myServiceWrapper .serviceBox .box button {
+  margin-top: 20px;
+  border: none;
+  background-color: transparent;
+  color: #ffb400;
+  font-size: 10px;
 }
 
-.price-category {
-  height: 500px;
-  width: calc(1245px - 250px);
-
+.pricePlanesWrapper {
+  height: auto;
+  width: 1000px;
+  margin-left: 10px;
   margin-top: 30px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-
-  row-gap: 20px;
- column-gap: 10px;
-margin-right: 10px;
-
   align-items: center;
-  
-
-
- 
 }
-.category {
-  height: 600px;
-  width: 300px;
+.pricePlanesWrapper .heads {
+  margin-top: 20px;
+  text-align: center;
+}
+.pricePlanesWrapper .heads h1 {
+  margin-right: 50px;
+}
+.pricePlanesWrapper .heads p {
+  margin-top: 10px;
+  color: #767676;
+}
+.pricePlanesWrapper .planBox {
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+
+.pricePlanesWrapper .priceBox {
+  height: 500px;
+  width: 305px;
+  margin-left: 25px;
 
   background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+.pricePlanesWrapper .priceBox h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.pricePlanesWrapper .priceBox h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.pricePlanesWrapper .priceBox span {
+  color: #767676;
+  font-size: 13px;
+}
+.pricePlanesWrapper .priceBox p {
+  color: #767676;
+  font-size: 12px;
+}
+
+.pricePlanesWrapper .planBox .priceBox .list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 20px;
+}
+.pricePlanesWrapper .planBox .priceBox .list .correct {
+  display: flex;
+  align-items: start;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.pricePlanesWrapper .planBox .priceBox .list .correct svg {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+.pricePlanesWrapper .planBox .priceBox .list .wrong {
+  display: flex;
+
+  align-items: start;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.pricePlanesWrapper .planBox .priceBox .list .wrong svg {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+
+.pricePlanesWrapper .planBox .priceBox .list p {
+  color: black;
+  font-weight: bold;
+}
+
+.pricePlanesWrapper .planBox .priceBox .list button {
+  height: 30px;
+  width: 100px;
   margin-left: 20px;
-  margin-bottom: 30px;
+  border: none;
+  background-color: transparent;
+  box-shadow: 0px 0px 3px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.pricePlanesWrapper .planBox .priceBox .list button:hover {
+  background-color: #d89906;
+  color: white;
+  box-shadow: 0px 0px 3px;
+}
+
+.gold {
+  background-color: #d89906;
+}
+
+.pricePlanesWrapper .priceBox .gold button:hover {
+  background-color: #d89906;
+}
+
+.recommendationWrapper {
+  height: 400px;
+  width: 995px;
+
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.recommendationWrapper .heads {
+  text-align: center;
+}
+.recommendationWrapper .heads h1 {
+  margin-right: 40px;
+  margin-top: 20px;
+}
+.recommendationWrapper .heads p {
+  margin-top: 10px;
+  color: #767676;
+}
+
+.recommendationWrapper .recommendationsBox {
+  height: 60%;
+  width: 100%;
+
+  margin-top: 25px;
+  display: flex;
+}
+
+.recommendationWrapper .recommendationsBox .recommendation-msg {
+  height: 100%;
+  width: 300px;
+  background-color: white;
+  margin-left: 25px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-
 }
-.price {
+
+.recommendationWrapper .recommendationsBox .recommendation-msg .stars {
+  margin-top: 10px;
+}
+
+.recommendationWrapper .recommendationsBox .recommendation-msg .info {
+  margin-top: 10px;
   display: flex;
+  flex-direction: column;
+}
+.recommendationWrapper .recommendationsBox .recommendation-msg p {
+  color: #767676;
+  font-size: 13px;
+}
+
+.recommendationWrapper .recommendationsBox .recommendation-msg .profile {
+  display: flex;
+}
+.recommendationWrapper
+  .recommendationsBox
+  .recommendation-msg
+  .profile
+  .imgbox {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #767676;
+  margin-top: 40px;
+  margin-right: 15px;
+}
+.recommendationWrapper
+  .recommendationsBox
+  .recommendation-msg
+  .profile
+  .names
+  h4 {
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+.educationWrapper {
+  height: 700px;
+  width: 990px;
+
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+.educationWrapper .heads {
+  text-align: center;
+}
+
+.educationWrapper .heads h1 {
+  margin-right: 45px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.educationWrapper .heads p {
+  margin-top: 10px;
+  color: #767676;
+}
+
+.eduInfoBox {
+  height: 78%;
+  width: 100%;
+
+  margin-top: 30px;
+  padding: 13px;
+}
+
+.eduInfoBox .eduInfo {
+  height: 175px;
+  width: 96%;
+
+  margin-left: 20px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  display: flex;
+}
+
+.eduInfoBox .eduInfo .uni {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+
+  padding: 20px;
+}
+.eduInfoBox .eduInfo .uni .stdate {
+  display: flex;
+  margin-top: 10px;
+}
+.eduInfoBox .eduInfo .uni .stdate span {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 3px;
+}
+.eduInfoBox .eduInfo .uni .stdate p {
+  margin-right: 10px;
+  margin-top: 5px;
+  font-size: 12px;
+  background-color: #ffb400;
+}
+
+.eduInfoBox .eduInfo .certificate {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+
+  text-align: start;
+}
+
+.eduInfoBox .eduInfo .certificate h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.eduInfoBox .eduInfo .certificate p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #767676;
+}
+
+.portfolioWrapper {
+  height: 1000px;
+  width: 990px;
+
+  margin-bottom: 30px;
+}
+
+.portfolioWrapper .heads {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.portfolioWrapper .heads h1 {
+  margin-right: 40px;
+}
+
+.portfolioWrapper .portfolioBox {
+  height: 88%;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolioWrapper .portfolioBox .portfoliodesign {
+  height: 270px;
+  width: 270px;
+  background-color: white;
+  margin-left: 45px;
+  margin-top: 10px;
+  position: relative;
+}
+.portfolioWrapper .portfolioBox .portfoliodesign img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.portfolioWrapper .portfolioBox .portfoliodesign svg {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 105px;
+  right: 105px;
+}
+
+.blogWrapper {
+  height: 500px;
+  width: 990px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.blogWrapper .heads {
+  text-align: center;
+}
+.blogWrapper .heads h1 {
+  margin-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.blogWrapper .blogDesign {
+  height: 70%;
+  width: 100%;
+  margin-top: 10px;
+
+  display: flex;
+  padding: 2px 30px;
+}
+
+.blogWrapper .blogDesign .blogBox {
+  height: 100%;
+  width: 300px;
+  background-color: white;
+  margin-left: 10px;
+}
+.blogWrapper .blogDesign .blogBox .imgsec {
+  height: 50%;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+.blogWrapper .blogDesign .blogBox .imgsec img {
+  height: 100%;
+  width: 100%;
+  object-fit: 100%;
+}
+
+.blogWrapper .blogDesign .blogBox .article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.blogWrapper .blogDesign .blogBox .article h4 {
+  margin-top: 10px;
+}
+.blogWrapper .blogDesign .blogBox .article p {
+  font-size: 13px;
+  color: #767676;
+  margin-top: 10px;
+}
+
+.blogWrapper .blogDesign .blogBox .article button {
+  border: none;
+  background-color: transparent;
+  margin-top: 15px;
+  color: #ffb400;
+  transition: ease-in-out;
+}
+
+.blogWrapper .blogDesign .blogBox .article button:active {
+  letter-spacing: 2px;
+  transition: ease-in 0.5s;
+}
+.massegeWrapper {
+  height: 500px;
+  width: 990px;
+
+  margin-bottom: 20px;
+}
+
+.massegeWrapper .massegecontainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  padding: 0px 40px;
+}
+
+.massegeWrapper .massegecontainer .massegedesign {
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
-.category h4 {
+
+.massegeWrapper .massegecontainer .massegedesign p {
+  font-size: 20px;
+  font-weight: 600;
   margin-top: 40px;
 }
-.category h1 {
-  margin-top: 15px;
-  margin-left: -20px;
-}
-.category .hour {
-  margin-top: 15px;
-  color: rgb(160, 160, 160);
-}
-.price-planes p {
-  text-align: center;
-  font-size: 13px;
-  margin-top: 5px;
-  color: rgb(160, 160, 160);
-  margin-top: 50px;
-
-}
-.ul {
-  margin-top: 20px;
-  font-size: 13px;
-}
-.ul li {
-  margin-top: 9px;
-}
-
-ul {
-  list-style-image: url(./correctsvg/Vector.svg);
-}
-.most {
-  height: 30px;
+.massegeWrapper .massegecontainer .massegedesign .msgbox {
+  height: 85%;
   width: 100%;
+  background-color: white;
+  margin-top: 2%;
+  padding: 5px;
+}
+
+.massegeWrapper .massegecontainer .massegedesign .msgbox p {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 1px;
+  margin-left: 4%;
+}
+.massegeWrapper .massegecontainer .massegedesign .msgbox input {
+  height: 35px;
+  width: 90%;
+  margin-left: 4%;
+  border: none;
+  background-color: #f0f0f6;
+}
+.massegeWrapper .massegecontainer .massegedesign .msgbox textarea {
+  height: 40px;
+  width: 90%;
+  margin-left: 4%;
+}
+.massegeWrapper .massegecontainer .massegedesign .msgbox button {
+  height: 30px;
+  width: 100px;
+  border: none;
+  margin-top: 10px;
+  margin-left: 4%;
+  background-color: #ffb400;
+  color: black;
+  font-size: 12px;
+}
+
+.informationdesign {
+  width: 40%;
+  margin-left: 5%;
+
+  margin-top: 2%;
+  height: 95%;
+}
+.informationdesign p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 22px;
+}
+
+.informationdesign .contactContainer {
+  height: 89%;
+  width: 100%;
+
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.informationdesign .contactContainer .contactBox {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: white;
+  margin-top: 10px;
+  align-items: center;
+}
+.informationdesign .contactContainer .contactBox:first-child {
+  display: flex;
+  flex: 1;
+
+  margin-top: 00px;
+}
+
+.circleicon {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #ffb400;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(255, 180, 0);
+  margin-top: 10px;
 }
-.category h5 {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.gold h4 {
-  margin-top: 13px;
+.circleicon img {
+  height: 18px;
+  width: 18px;
+
+  object-fit: cover;
+  mix-blend-mode: multiply;
 }
 
-.category button {
-  margin-top: 20px;
+.contactBox .infoBox {
+  width: 100%;
+  display: flex;
+
+  align-items: start;
+}
+
+.contactBox .infoBox p {
+  font-size: 12px;
+  margin: 0;
+  margin-top: 10px;
+  padding-left: 30px;
+}
+.contactBox .infoBox .pe {
+  font-size: 12px;
+  margin: 0;
+  margin-top: 10px;
+  padding-left: 30px;
+  margin-left: 70px;
+}
+
+.mapWrapper {
+  height: 350px;
+  width: 990px;
+
+  margin-bottom: 20px;
+  padding: 0 40px;
+}
+
+.mapWrapper .mapDesign {
+  height: 100%;
+  width: 100%;
+}
+iframe {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+footer{
   height: 30px;
-  width: 100px;
-  border-radius: 30px;
-  border: none;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
-  box-shadow: 0px 0px 3px grey;
-  font-size: 10px;
-  color: black;
+  margin-top: 10px;
 }
-.gold button{
-  background-color: rgb(255, 180, 0);
-}
-
-.category button:hover {
-  background-color: rgb(207, 153, 26);
-  cursor: pointer;
-  
-}
-
-/* ------ RIGHT  ----- */
 
 .right {
   height: 100vh;
-  width: 80px;
+  width: 70px;
   background-color: white;
   position: fixed;
   right: 0;
@@ -615,3 +1089,12 @@ ul {
 .menus img:hover {
   color: rgb(219, 143, 115);
 }
+
+/* 
+@media screen and (min-width: 1440px) {
+  .right {
+    height: 100vh;
+    width: 80px;
+    background-color: rgb(32, 31, 31);
+  }
+} */
