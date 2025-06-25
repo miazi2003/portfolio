@@ -55,8 +55,3 @@ You can view or edit the site locally using any browser or code editor:
 ```bash
 cd portfolio
 
-3.***Open With Your Browser***
-
-
-
-
