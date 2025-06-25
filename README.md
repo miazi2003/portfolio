@@ -32,12 +32,7 @@ This is my personal developer portfolio website. It features a clean and visuall
 
 ---
 
-## 📸 Screenshot
 
-![Screenshot of Portfolio](./screenshot.png)  
-> _Replace this image with an actual screenshot of your site homepage._
-
----
 
 ## 📦 Dependencies
 
